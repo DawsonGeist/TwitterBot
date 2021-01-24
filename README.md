@@ -1,0 +1,2 @@
+# TwitterBot
+Some Twitter API Functionality, Basic Functions, I am planning to continue this project by developing a Semantic analysis algorithm that would be able to make an appropriate response given the text from a target tweet. Perhaps some further Analysis such as rating a tweets performance and its correlation to the Words/ +/- connotation of the words that make up the tweet. Further Development needed
