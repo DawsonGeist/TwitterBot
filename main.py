@@ -109,7 +109,7 @@ def getReplysToUser(userID):
             user = getUserByID(id)
             if user != None:
                 try:
-                    #       THIS SHIT IS BROKEN, ID != USERNAME --- SETS ARE UNORDERED
+                    #       Broken, ID != USERNAME --- SETS ARE UNORDERED
                     name = user['data']['username']
                     uID = user['data']['id']
                     print("Interacted with " + name)
@@ -155,7 +155,7 @@ def getTweetsByUser(userID, excludes, maxResults, tweetFields, mediaFields, user
 #   App does not have write action - Email Twitter
 def followUserByID(id):
     url = "https://api.twitter.com/1.1/friendships/create.json?user_id="+str(id)+"&follow=true"
-    #   God bless this fucking function
+    #   Oauth
     auth = OAuth1(twitterAPIKEY, twitterSecret, accessAPIKey, accessSecret)
     response = requests.request("POST", url, auth=auth)
     time.sleep(3)
